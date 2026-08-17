@@ -1,0 +1,2420 @@
+{
+    "Antonio": {
+        "basePrice": 189,
+        "strawberry": "لايوجد له قيمة بهذه الخانه",
+        "dragon": "6 Dragons + 9.72 Garama",
+        "garama": "لايوجد له قيمة بهذه الخانه",
+        "income": "125M/s",
+        "demand": "5/10",
+        "obtained": "First Craft Machine",
+        "status": "Unstable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "189",
+                "strawberry": "لايوجد له قيمة بهذه الخانه",
+                "dragon": "6 Dragons + 9.72 Garama",
+                "garama": "لايوجد له قيمة بهذه الخانه",
+                "income": "125M/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786903202:f>"
+            },
+            "phantom_none": {
+                "basePrice": "لاتوجد له قيمة",
+                "strawberry": "لاتوجد له قيمة",
+                "dragon": "لاتوجد له قيمة",
+                "garama": "لاتوجد له قيمة",
+                "income": "1.3B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786904299:f>"
+            },
+            "candy_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "500M/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903432:f>"
+            },
+            "gold_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "156.2M/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786903255:f>"
+            },
+            "diamond_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "187.5M/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786903311:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "250M/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903350:f>"
+            },
+            "lava_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "750M/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903480:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "875M/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786903592:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "937.5M/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903664:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "1B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903738:f>"
+            },
+            "cursed_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "1.1B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903777:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "1400",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "1.2B/s",
+                "demand": "2/10",
+                "lastUpdated": "<t:1786903839:f>"
+            },
+            "divine_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "1.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903887:f>"
+            },
+            "cyber_none": {
+                "basePrice": "لاتوجد له قيمة",
+                "strawberry": "لاتوجد له قيمة",
+                "dragon": "لاتوجد له قيمة",
+                "garama": "لاتوجد له قيمة",
+                "income": "1.3B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786904242:f>"
+            }
+        }
+    },
+    "Arcadragon": {
+        "basePrice": 670,
+        "strawberry": "لايوجد له قيمة",
+        "dragon": "16 dragons",
+        "garama": "لايوجد له قيمة",
+        "income": "215M/s",
+        "demand": "7/10",
+        "obtained": "Dragon Hatchery",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "gold_none": {
+                "basePrice": "1200",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "268.7M/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983293:f>"
+            },
+            "none_none": {
+                "basePrice": "670",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "16 dragons",
+                "garama": "لايوجد له قيمة",
+                "income": "215M/s",
+                "demand": "7/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786905854:f>"
+            },
+            "diamond_none": {
+                "basePrice": "1500",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "322.5M/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983362:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لاتوجد له قيمة",
+                "dragon": "لاتوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "430M/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983652:f>"
+            },
+            "candy_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "860M/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983830:f>"
+            },
+            "lava_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "1.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983879:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "1.5B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983906:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "1.6B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983935:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "1.8B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786983963:f>"
+            },
+            "cursed_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "1.9B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984022:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "2.1B/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984083:f>"
+            },
+            "divine_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "2.1B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984112:f>"
+            },
+            "cyber_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "2.3B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984133:f>"
+            },
+            "phantom_none": {
+                "basePrice": "لايوجد له قيمة",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "لايوجد له قيمة",
+                "income": "2.5B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984159:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786905854:f>"
+    },
+    "Bunny and Eggy": {
+        "basePrice": 65,
+        "strawberry": "ليس لديه قيمة",
+        "dragon": "1 Dragon + 5 GARAMAS",
+        "garama": "ليس لديه قيمة",
+        "income": "170M/s",
+        "demand": "4/10",
+        "obtained": "Easter Special Event",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "65",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 Dragon + 5 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "170M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984203:f>"
+            },
+            "gold_none": {
+                "basePrice": "120",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 Dragon + 13 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "212.5M/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984264:f>"
+            },
+            "diamond_none": {
+                "basePrice": "169",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 DRAGONS",
+                "garama": "ليس لديه قيمة",
+                "income": "255M/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984384:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "340M/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984415:f>"
+            },
+            "candy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "680M/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984439:f>"
+            },
+            "lava_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984469:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.1B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984499:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.2B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984524:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "340",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.4B/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984592:f>"
+            },
+            "cursed_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.5B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984646:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.7B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984681:f>"
+            },
+            "divine_none": {
+                "basePrice": "323",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.7B/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984767:f>"
+            },
+            "cyber_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.8B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984821:f>"
+            },
+            "phantom_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786984844:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786984203:f>"
+    },
+    "Burguro And Fryuro": {
+        "basePrice": 90,
+        "strawberry": "0.30",
+        "dragon": "4 Dragons",
+        "garama": "80.00",
+        "income": "140M/s",
+        "demand": "■■■■■■▢▢▢▢ `6/10` ▲",
+        "obtained": "Fast Food Event",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "5",
+                "strawberry": "لاتوجد قيمه",
+                "dragon": "لاتوجد قيمه",
+                "garama": "1",
+                "income": "150M/s",
+                "demand": "`4/10`",
+                "lastUpdated": "<t:1786882367:f>"
+            }
+        }
+    },
+    "Capitano Moby": {
+        "basePrice": 25,
+        "strawberry": "0.05",
+        "dragon": "1 Dragons",
+        "garama": "15.00",
+        "income": "10M/s",
+        "demand": "■■▢▢▢▢▢▢▢▢ `2/10` ▬",
+        "obtained": "Basic Craft",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "8﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2.5 GARAMAS",
+                "income": "160M/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786803553:f>"
+            },
+            "candy_none": {
+                "basePrice": "11﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "640M/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786804911:f>"
+            },
+            "divine_none": {
+                "basePrice": "18﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "1:6B/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786805262:f>"
+            },
+            "gold_none": {
+                "basePrice": "8﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2:5",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786716167:f>"
+            },
+            "lava_none": {
+                "basePrice": "16﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "3:5",
+                "income": "960M/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786805798:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "14﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "1:3B/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786805084:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "15﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4:5",
+                "income": "1:6B/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786805174:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "14﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "1:1B",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786805856:f>"
+            },
+            "cursed_none": {
+                "basePrice": "11﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "1:4B",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786804155:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "12﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "1:4B",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786804034:f>"
+            },
+            "cyber_none": {
+                "basePrice": "13﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "1:7B/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786804441:f>"
+            },
+            "diamond_none": {
+                "basePrice": "7﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2:5 Garama",
+                "income": "240M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786804725:f>"
+            },
+            "phantom_none": {
+                "basePrice": "17﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "1:9B/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786805484:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "17﷼",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4:5",
+                "income": "320M/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786805681:f>"
+            }
+        }
+    },
+    "Cash or Card": {
+        "basePrice": 3.28,
+        "strawberry": "لايوجد له قيمه",
+        "dragon": "لايوجد له قيمه",
+        "garama": "1 garama",
+        "income": "100M/s",
+        "demand": "4/10",
+        "obtained": "Bank Steal Event",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "gold_none": {
+                "basePrice": "5.15",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "1",
+                "income": "125M/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786986692:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "17",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "4",
+                "income": "200M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786986403:f>"
+            },
+            "none_none": {
+                "basePrice": "3.28",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "1 garama",
+                "income": "100M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786983853:f>"
+            },
+            "cyber_none": {
+                "basePrice": "12.70",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "3 garama",
+                "income": "1.1B/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786986307:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "12.70",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "3garama",
+                "income": "1B/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786985322:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "9.45",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2garama",
+                "income": "850M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786985574:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "6.44",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2garama",
+                "income": "750M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786985295:f>"
+            },
+            "cursed_none": {
+                "basePrice": "12",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2.5 garama",
+                "income": "900M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786985658:f>"
+            },
+            "phantom_none": {
+                "basePrice": "14",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "3 garama",
+                "income": "1.2B/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786985762:f>"
+            },
+            "candy_none": {
+                "basePrice": "8",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2.5 garama",
+                "income": "400M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786985916:f>"
+            },
+            "lava_none": {
+                "basePrice": "9",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2.5garama",
+                "income": "600M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786986003:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "9.22",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2.5 garama",
+                "income": "700M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786986083:f>"
+            },
+            "divine_none": {
+                "basePrice": "12. 35",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "3 garama",
+                "income": "1B/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786986237:f>"
+            },
+            "diamond_none": {
+                "basePrice": "5.33",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "1 garama",
+                "income": "150M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `s.o.t1` في <t:1786986595:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `s.o.t1` في <t:1786983853:f>"
+    },
+    "Celestial Pegasus": {
+        "basePrice": 6,
+        "strawberry": "لايوجد له قيمه",
+        "dragon": "لايوجد له قيمه",
+        "garama": "1 garama",
+        "income": "175M/s",
+        "demand": "4/10",
+        "obtained": "Celestial Craft Altar",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "6",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "1 garama",
+                "income": "175M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `3uzq` في <t:1786982603:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `3uzq` في <t:1786982603:f>"
+    },
+    "Cerberus": {
+        "basePrice": 140,
+        "strawberry": "0.55",
+        "dragon": "7 Dragons",
+        "garama": "135.00",
+        "income": "350M/s",
+        "demand": "■■■■■■■■▢▢ `8/10` ▲",
+        "obtained": "Underworld Altar Craft",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "gold_none": {
+                "basePrice": "11",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "3",
+                "income": "218.7M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786876180:f>"
+            },
+            "diamond_none": {
+                "basePrice": "13",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "4",
+                "income": "262.5M/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786877730:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "29",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "7",
+                "income": "1.7B/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786904415:f>"
+            },
+            "cyber_none": {
+                "basePrice": "32",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "8",
+                "income": "1.9B/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `rd2010.` في <t:1786950042:f>"
+            },
+            "phantom_none": {
+                "basePrice": "34",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "9",
+                "income": "2.1B/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `rd2010.` في <t:1786951413:f>"
+            }
+        }
+    },
+    "Cooki and Milki": {
+        "basePrice": 80,
+        "strawberry": "0.26",
+        "dragon": "4 Dragons",
+        "garama": "75.00",
+        "income": "120M/s",
+        "demand": "■■■■■■▢▢▢▢ `6/10` ▲",
+        "obtained": "Bakery Craft Machine",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "9",
+                "strawberry": "لاتوجد له قيمة",
+                "dragon": "لاتوجد له قيمة",
+                "garama": "3",
+                "income": "155M/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786882418:f>"
+            },
+            "gold_none": {
+                "basePrice": "9.50",
+                "strawberry": "لاتوجد له قيمة",
+                "dragon": "لاتوجد له قيمة",
+                "garama": "3.25",
+                "income": "193.7M/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786814676:f>"
+            },
+            "diamond_none": {
+                "basePrice": "10",
+                "strawberry": "لاتوجد له قيمة",
+                "dragon": "لاتوجد له قيمة",
+                "garama": "3.50",
+                "income": "232.5M/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786814783:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "لاتوجد لة قيمة محدده",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "لاتوجد لة قيمه",
+                "income": "310M/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786900299:f>"
+            },
+            "candy_none": {
+                "basePrice": "لاتوجد لة قيمة محدده",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "لاتوجد لة قيمه",
+                "income": "620M/s",
+                "demand": "1/10",
+                "lastUpdated": "<t:1786900406:f>"
+            },
+            "lava_none": {
+                "basePrice": "لاتوجد لة قيمه",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "لاتوجد لة قيمه",
+                "income": "930M/s",
+                "demand": "2/10",
+                "lastUpdated": "<t:1786900458:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "لاتوجد لة قيمه",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "لاتوجد لة قيمه",
+                "income": "1B/s",
+                "demand": "1/10",
+                "lastUpdated": "<t:1786900642:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "لاتوجد لة قيمه",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "لاتوجد لة قيمه",
+                "income": "1.1B/s",
+                "demand": "2/10",
+                "lastUpdated": "<t:1786901016:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "16",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "5",
+                "income": "1.3B/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786901043:f>"
+            },
+            "cursed_none": {
+                "basePrice": "لاتوجد لة قيمه",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "5",
+                "income": "1.3B/s",
+                "demand": "1/10",
+                "lastUpdated": "<t:1786902944:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "14",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "4.50",
+                "income": "1.5B/s",
+                "demand": "2/10",
+                "lastUpdated": "<t:1786900983:f>"
+            },
+            "divine_none": {
+                "basePrice": "لاتوجد لة قيمه",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "لاتوجد لة قيمه",
+                "income": "1.5B/s",
+                "demand": "1/10",
+                "lastUpdated": "<t:1786901093:f>"
+            },
+            "cyber_none": {
+                "basePrice": "لاتوجد لة قيمه",
+                "strawberry": "لاتوجد لة قيمه",
+                "dragon": "لاتوجد لة قيمه",
+                "garama": "لاتوجد لة قيمه",
+                "income": "1.7B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903083:f>"
+            },
+            "phantom_none": {
+                "basePrice": "لاتوجد له قيمه",
+                "strawberry": "لاتوجد له قيمه",
+                "dragon": "لاتوجد له قيمه",
+                "garama": "لاتوجد له قيمه",
+                "income": "1.8B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786903147:f>"
+            }
+        }
+    },
+    "Dragon Aquanini": {
+        "basePrice": 125,
+        "strawberry": "ليس لديه قيمة",
+        "dragon": "3 Dragons + 4 GARAMAS",
+        "garama": "ليس لديه قيمة",
+        "income": "375M/s",
+        "demand": "6/10",
+        "obtained": "Oceanic Altar Craft",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "125",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "3 Dragons + 4 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "375M/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985112:f>"
+            },
+            "gold_none": {
+                "basePrice": "156.50",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 DRAGONS + 12 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "468.7M/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985255:f>"
+            },
+            "diamond_none": {
+                "basePrice": "160",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "3 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "562.5M/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985367:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "750M/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985522:f>"
+            },
+            "candy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.5B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985583:f>"
+            },
+            "lava_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.2B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985624:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.6B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985668:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.8B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985709:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.1B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985744:f>"
+            },
+            "cursed_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.3B/s",
+                "demand": "1/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985788:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "760",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.7B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985852:f>"
+            },
+            "divine_none": {
+                "basePrice": "650",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.7B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985896:f>"
+            },
+            "cyber_none": {
+                "basePrice": "540",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "6 DRAGONS",
+                "garama": "ليس لديه قيمة",
+                "income": "4.1B/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786985953:f>"
+            },
+            "phantom_none": {
+                "basePrice": "450",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "5 DRAGONS + 12 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "4.5B/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986006:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786985112:f>"
+    },
+    "Dragon Cannelloni": {
+        "basePrice": 120,
+        "strawberry": "0.35",
+        "dragon": "8 Dragons",
+        "garama": "180.00",
+        "income": "300M/s",
+        "demand": "■■■■■■▢▢▢▢ `6/10` ▬",
+        "obtained": "Special Event Craft",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "none_none": {
+                "basePrice": "40",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 DRAGON",
+                "garama": "19 GARAMAS",
+                "income": "250M/s",
+                "demand": "10/10",
+                "lastUpdated": "<t:1786806132:f>"
+            },
+            "gold_none": {
+                "basePrice": "45",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 DRAGON + 1 GARAMA",
+                "garama": "20 GARAMAS",
+                "income": "312.5M/s",
+                "demand": "9/10",
+                "lastUpdated": "<t:1786806213:f>"
+            },
+            "diamond_none": {
+                "basePrice": "48",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 DRAGON + 2 GARAMAS",
+                "garama": "21 GARAMAS",
+                "income": "375M/s",
+                "demand": "9/10",
+                "lastUpdated": "<t:1786806306:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "100",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 DRAGONS + 9 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "500M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786806622:f>"
+            },
+            "candy_none": {
+                "basePrice": "75",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 Dragons + 14 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "1B/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786806699:f>"
+            },
+            "lava_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "1.5B/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786806801:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "1.7B/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786806883:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "1.8B/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786814920:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 DRAGONS",
+                "garama": "ليس لديه قيمة",
+                "income": "2.1B/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786894311:f>"
+            },
+            "cursed_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "2.2B/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786894432:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "2.5B/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786894519:f>"
+            },
+            "divine_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "2.5B/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786894618:f>"
+            },
+            "cyber_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "2.7B/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786894687:f>"
+            },
+            "phantom_none": {
+                "basePrice": "98",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons + 11 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "3B/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786894783:f>"
+            }
+        }
+    },
+    "La Secret Combinasion": {
+        "basePrice": 100,
+        "strawberry": "0.05",
+        "dragon": "1 Dragons",
+        "garama": "15.00",
+        "income": "10M/s",
+        "demand": "■■▢▢▢▢▢▢▢▢ `2/10` ▬",
+        "obtained": "Secret Craft",
+        "status": "Stable",
+        "type": "SECRET",
+        "customEmoji": "<:La_Secret_Combinasion:1537768617574142053>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "3",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "1",
+                "income": "125m/s",
+                "demand": "■■▢▢▢▢▢▢▢▢",
+                "lastUpdated": "<t:1786785770:f>"
+            },
+            "gold_none": {
+                "basePrice": "3",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "1",
+                "income": "156.2m/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786785871:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمه",
+                "dragon": "لايوجد له قيمه",
+                "garama": "2",
+                "income": "1.2B",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786814805:f>"
+            },
+            "diamond_none": {
+                "basePrice": "4",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "1",
+                "income": "187.5M/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786877569:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "1B/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786816240:f>"
+            },
+            "cursed_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "1.1B/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786816698:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "10",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "3",
+                "income": "250M/s",
+                "demand": "2/10",
+                "lastUpdated": "<t:1786863535:f>"
+            },
+            "divine_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "1.2B/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786864180:f>"
+            },
+            "candy_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "500M/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786866293:f>"
+            },
+            "lava_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "750M/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786866395:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "875M/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786866494:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "937.5M/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786866627:f>"
+            },
+            "cyber_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "1.3B/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786866821:f>"
+            },
+            "phantom_none": {
+                "basePrice": "7",
+                "strawberry": "لايوجد له قيمة",
+                "dragon": "لايوجد له قيمة",
+                "garama": "2",
+                "income": "1.5B/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786869563:f>"
+            }
+        }
+    },
+    "La Supreme Combinasion": {
+        "basePrice": 100,
+        "strawberry": "0.05",
+        "dragon": "1 Dragons",
+        "garama": "15.00",
+        "income": "10M/s",
+        "demand": "■■▢▢▢▢▢▢▢▢ `2/10` ▬",
+        "obtained": "Premium Combination",
+        "status": "Stable",
+        "type": "SECRET",
+        "customEmoji": "<:La_Supreme_Combinasion:1537768739368603740>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "165",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2.5",
+                "garama": "ليس لديه قيمة",
+                "income": "200M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786797635:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "450",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "10 Dragons + 12 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "1.4B/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786799720:f>"
+            },
+            "phantom_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.4B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786798067:f>"
+            },
+            "cyber_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786799034:f>"
+            },
+            "divine_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786799146:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "945",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "13 DRAGONS",
+                "garama": "ليس لديه قيمة",
+                "income": "2B/s",
+                "demand": "3/10",
+                "lastUpdated": "<t:1786799412:f>"
+            },
+            "cursed_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.8B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786799504:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.7B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786799594:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.5B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786799668:f>"
+            },
+            "lava_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786799772:f>"
+            },
+            "candy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "800M/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786799977:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "1000",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "15 DRAGONS + 14 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "400M/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786800160:f>"
+            },
+            "gold_none": {
+                "basePrice": "260",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "3 DRAGONS",
+                "garama": "ليس لديه قيمة",
+                "income": "250M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786800944:f>"
+            },
+            "diamond_none": {
+                "basePrice": "300",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "3 DRAGONS + 5 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "300M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786801047:f>"
+            }
+        }
+    },
+    "LA CASA BOO": {
+        "basePrice": 25,
+        "strawberry": "0.05",
+        "dragon": "1 Dragons",
+        "garama": "15.00",
+        "income": "10M/s",
+        "demand": "■■▢▢▢▢▢▢▢▢ `2/10` ▬",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "SECRET",
+        "combosData": {
+            "phantom_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786801588:f>"
+            },
+            "cyber_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.1B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786801516:f>"
+            },
+            "divine_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1B/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786801693:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "110",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons + 12 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "1B/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786801860:f>"
+            },
+            "cursed_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "900M/s",
+                "demand": "0/10",
+                "lastUpdated": "<t:1786801978:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "60",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 Dragons + 12 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "850M/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786802098:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "74",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 Dragons + 15 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "750M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786802214:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "90",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "700M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786802284:f>"
+            },
+            "lava_none": {
+                "basePrice": "45",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 Dragons + 4 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "600M/s",
+                "demand": "5/10",
+                "lastUpdated": "<t:1786802340:f>"
+            },
+            "candy_none": {
+                "basePrice": "250",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "6 DRAGONS",
+                "garama": "ليس لديه قيمة",
+                "income": "400M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786802440:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "78",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "1 Dragons + 17 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "200M/s",
+                "demand": "4/10",
+                "lastUpdated": "<t:1786802546:f>"
+            },
+            "diamond_none": {
+                "basePrice": "34",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "16 GARAMAS",
+                "income": "150M/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786802889:f>"
+            },
+            "gold_none": {
+                "basePrice": "27",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "15 GARAMAS",
+                "income": "125M/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786802801:f>"
+            },
+            "none_none": {
+                "basePrice": "16",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "13 GARAMAS",
+                "income": "100M/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786802957:f>"
+            }
+        }
+    },
+    "Jelly Moby": {
+        "basePrice": 80,
+        "strawberry": "ليس لديه قيمة",
+        "dragon": "2 Dragons",
+        "garama": "ليس لديه قيمة",
+        "income": "175M/s",
+        "demand": "5/10",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "SECRET",
+        "customEmoji": "<:Jelly_Moby:1537453061008789574>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "80",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "2 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "175M/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986238:f>"
+            },
+            "gold_none": {
+                "basePrice": "100",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "3 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "218.7M/s",
+                "demand": "4/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986290:f>"
+            },
+            "diamond_none": {
+                "basePrice": "120",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "3 Dragons + 10 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "262.5M/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986405:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "350M/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986473:f>"
+            },
+            "candy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "700M/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986505:f>"
+            },
+            "lava_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986537:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986565:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.3B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986604:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.4B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986728:f>"
+            },
+            "cursed_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.5B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986762:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.7B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986794:f>"
+            },
+            "divine_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.7B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986823:f>"
+            },
+            "cyber_none": {
+                "basePrice": "250",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "5 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "1.9B/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986889:f>"
+            },
+            "phantom_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.1B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786986937:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786986238:f>"
+    },
+    "meowl": {
+        "basePrice": 1100,
+        "strawberry": "ليس لديه قيمة",
+        "dragon": "16 Dragons",
+        "garama": "ليس لديه قيمة",
+        "income": "600M/s",
+        "demand": "10/10",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "OG",
+        "customEmoji": "<:Clear_background_clear_meowl_ima:1537772347044659260>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "1100",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "16 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "600M/s",
+                "demand": "10/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989518:f>"
+            },
+            "gold_none": {
+                "basePrice": "1140",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "17 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "750M/s",
+                "demand": "10/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989670:f>"
+            },
+            "diamond_none": {
+                "basePrice": "1200",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "18 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "900M/s",
+                "demand": "9/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989712:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.2B/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989747:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786989518:f>"
+    },
+    "Strawberry Elephant": {
+        "basePrice": 1400,
+        "strawberry": "0.05",
+        "dragon": "1 Dragons",
+        "garama": "15.00",
+        "income": "10M/s",
+        "demand": "■■▢▢▢▢▢▢▢▢ `2/10` ▬",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "OG",
+        "customEmoji": "<:strawberryelephant:1532203713031307336>",
+        "combosData": {}
+    },
+    "John Pork": {
+        "basePrice": 600,
+        "strawberry": "0.05",
+        "dragon": "1 Dragons",
+        "garama": "15.00",
+        "income": "10M/s",
+        "demand": "■■▢▢▢▢▢▢▢▢ `2/10` ▬",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "OG",
+        "customEmoji": "<:John_Pork:1537815648598499418>",
+        "combosData": {}
+    },
+    "Skibidi Toilet": {
+        "basePrice": 550,
+        "strawberry": "ليس لديه قيمة",
+        "dragon": "13 Dragons",
+        "garama": "ليس لديه قيمة",
+        "income": "450M/s",
+        "demand": "9/10",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "OG",
+        "customEmoji": "<:Default_Skibidi_Toilet:1537815666579472385>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "550",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "13 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "450M/s",
+                "demand": "9/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987741:f>"
+            },
+            "gold_none": {
+                "basePrice": "600",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "13 Dragons + 14 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "562.5M/s",
+                "demand": "9/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987799:f>"
+            },
+            "diamond_none": {
+                "basePrice": "600",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "14 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "675M/s",
+                "demand": "9/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987870:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "962.5",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "18 Dragons + 10 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "900M/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987985:f>"
+            },
+            "candy_none": {
+                "basePrice": "1050",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "17 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "1.8B/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988099:f>"
+            },
+            "lava_none": {
+                "basePrice": "1000",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "16 Dragons + 15 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "2.7B/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988195:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "1150",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "17 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "3.1B/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988244:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "1230",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "18 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "3.3B/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988313:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "1250",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "17 Dragons + 5 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "3.8B/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988401:f>"
+            },
+            "cursed_none": {
+                "basePrice": "1140",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "17 Dragons + 12 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "4B/s",
+                "demand": "8/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988489:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "1250",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "18 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "4.5B/s",
+                "demand": "7/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988547:f>"
+            },
+            "divine_none": {
+                "basePrice": "1200",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "17 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "4.5B/s",
+                "demand": "7/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988594:f>"
+            },
+            "cyber_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "4.9B/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988629:f>"
+            },
+            "phantom_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "5.4B/s",
+                "demand": "5/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988668:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786987741:f>"
+    },
+    "Headless Horseman": {
+        "basePrice": 21000,
+        "strawberry": "7.5 strawberry elephant",
+        "dragon": "ليس لديه قيمة",
+        "garama": "ليس لديه قيمة",
+        "income": "600M/s",
+        "demand": "10/10",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "OG",
+        "customEmoji": "<:headlesshorseman:1532203713790476381>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "21000",
+                "strawberry": "7.5 strawberry elephant",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "600M/s",
+                "demand": "10/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987095:f>"
+            },
+            "gold_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "750M/s",
+                "demand": "10/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987129:f>"
+            },
+            "diamond_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "900M/s",
+                "demand": "10/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987241:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987277:f>"
+            },
+            "candy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.4B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987324:f>"
+            },
+            "lava_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.6B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987365:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "4.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987394:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "4.5B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987420:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "5.1B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987443:f>"
+            },
+            "cursed_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "5.4B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987472:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "6B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987543:f>"
+            },
+            "divine_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "6B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987572:f>"
+            },
+            "cyber_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "6.6B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987603:f>"
+            },
+            "phantom_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "7.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786987636:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786987095:f>"
+    },
+    "garama and madundung": {
+        "basePrice": 3,
+        "strawberry": "0.05",
+        "dragon": "1 Dragons",
+        "garama": "15.00",
+        "income": "50/s",
+        "demand": "■■▢▢▢▢▢▢▢▢ `2/10` ▬",
+        "obtained": "red carpet",
+        "status": "Stable",
+        "type": "SECRET",
+        "customEmoji": "<:1498055902828171366:1537164414577410048>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "3",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "1 GARAMA",
+                "income": "50M/s",
+                "demand": "10/10",
+                "lastUpdated": "<t:1786804027:f>"
+            },
+            "gold_none": {
+                "basePrice": "3.50",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "1.25 GARAMAS",
+                "income": "62.5M/s",
+                "demand": "10/10",
+                "lastUpdated": "<t:1786804125:f>"
+            },
+            "diamond_none": {
+                "basePrice": "3.75",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "1.50",
+                "income": "75M/s",
+                "demand": "10/10",
+                "lastUpdated": "<t:1786804239:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "11",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "5 GARAMAS",
+                "income": "100M/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786804381:f>"
+            },
+            "candy_none": {
+                "basePrice": "9",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "3 GARAMAS",
+                "income": "200M/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786804471:f>"
+            },
+            "lava_none": {
+                "basePrice": "11",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4 GARAMAS",
+                "income": "300M/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786804591:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "11",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4 GARAMA",
+                "income": "350M/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786804681:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "9.5",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "3 GARAMAS",
+                "income": "375M/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786804756:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "12.75",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4 GARAMAS",
+                "income": "425M/s",
+                "demand": "8/10",
+                "lastUpdated": "<t:1786804819:f>"
+            },
+            "cursed_none": {
+                "basePrice": "14",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4 GARAMAS",
+                "income": "450M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786804943:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "13",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4 GARAMAS",
+                "income": "500M/s",
+                "demand": "9/10",
+                "lastUpdated": "<t:1786805009:f>"
+            },
+            "divine_none": {
+                "basePrice": "12",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4 GARAMAS",
+                "income": "500M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786805060:f>"
+            },
+            "cyber_none": {
+                "basePrice": "11",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4 GARAMAS",
+                "income": "550M/s",
+                "demand": "7/10",
+                "lastUpdated": "<t:1786805122:f>"
+            },
+            "phantom_none": {
+                "basePrice": "14",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "4",
+                "income": "600M/s",
+                "demand": "6/10",
+                "lastUpdated": "<t:1786805183:f>"
+            }
+        }
+    },
+    "Dragon Gingerini": {
+        "basePrice": 200,
+        "strawberry": "ليس لديه قيمة",
+        "dragon": "5 Dragons",
+        "garama": "ليس لديه قيمة",
+        "income": "350M/s",
+        "demand": "7/10",
+        "obtained": "Custom Command Added",
+        "status": "Stable",
+        "type": "SECRET",
+        "customEmoji": "<:Dragon_Gingerini:1533326513775181945>",
+        "combosData": {
+            "none_none": {
+                "basePrice": "200",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "5 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "350M/s",
+                "demand": "7/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988786:f>"
+            },
+            "gold_none": {
+                "basePrice": "220",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "5 Dragons + 5 GARAMAS",
+                "garama": "ليس لديه قيمة",
+                "income": "437.5M/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988861:f>"
+            },
+            "diamond_none": {
+                "basePrice": "320",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "6 Dragons",
+                "garama": "ليس لديه قيمة",
+                "income": "525M/s",
+                "demand": "6/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988953:f>"
+            },
+            "bloodrot_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "700M/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786988977:f>"
+            },
+            "candy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "1.4B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989007:f>"
+            },
+            "lava_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.1B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989079:f>"
+            },
+            "galaxy_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.4B/s",
+                "demand": "3/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989109:f>"
+            },
+            "yin yang_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.6B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989141:f>"
+            },
+            "radioactive_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "2.9B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989190:f>"
+            },
+            "cursed_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.1B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989221:f>"
+            },
+            "rainbow_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.5B/s",
+                "demand": "2/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989255:f>"
+            },
+            "divine_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.5B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989311:f>"
+            },
+            "cyber_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "3.8B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989341:f>"
+            },
+            "phantom_none": {
+                "basePrice": "ليس لديه قيمة",
+                "strawberry": "ليس لديه قيمة",
+                "dragon": "ليس لديه قيمة",
+                "garama": "ليس لديه قيمة",
+                "income": "4.2B/s",
+                "demand": "0/10",
+                "lastUpdated": "بواسطة `mrxx0010` في <t:1786989376:f>"
+            }
+        },
+        "lastUpdated": "بواسطة `mrxx0010` في <t:1786988786:f>"
+    }
+}
