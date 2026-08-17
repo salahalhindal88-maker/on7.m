@@ -634,4 +634,4 @@ client.on("messageCreate", async (msg) => {
     } catch (error) { console.error("Error adding reactions in suggestions channel:", error); }
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
