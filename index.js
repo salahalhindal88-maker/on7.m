@@ -641,4 +641,9 @@ client.on("messageCreate", async (msg) => {
     } catch (error) { console.error("Error adding reactions in suggestions channel:", error); }
 });
 
+if (!token) {
+  console.error(" خطأ: التوكن غير موجود أو لم يتم قراءته من متغيرات Railway!");
+  process.exit(1);
+}
+
 client.login(token);
