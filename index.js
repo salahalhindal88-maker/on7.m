@@ -1,8 +1,15 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const path = require("path");
-const { token } = require("./config.json");
-
+let token;
+try {
+  // يحاول قراءة التوكن من الملف محلياً على جهازك
+  const config = require('./config.json');
+  token = config.token;
+} catch (error) {
+  // إذا لم يجد الملف (على سيرفر Railway)، يستخدم متغير البيئة تلقائياً
+  token = process.env.TOKEN;
+}
 const client = new Discord.Client({ 
     intents: [
         Discord.GatewayIntentBits.Guilds, 
