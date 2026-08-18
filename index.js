@@ -1,15 +1,8 @@
-const Discord = require("discord.js");
+nst Discord = require("discord.js");
 const fs = require("fs");
 const path = require("path");
-let token;
-try {
-  // يحاول قراءة التوكن من الملف محلياً على جهازك
-  const config = require('./config.json');
-  token = config.token;
-} catch (error) {
-  // إذا لم يجد الملف (على سيرفر Railway)، يستخدم متغير البيئة تلقائياً
-  token = process.env.TOKEN;
-}
+const { token } = require("./config.json");
+
 const client = new Discord.Client({ 
     intents: [
         Discord.GatewayIntentBits.Guilds, 
@@ -356,7 +349,7 @@ client.on("interactionCreate", async (i) => {
             if (i.commandName === "edit_full_details") {
                 if (i.channel.name !== "تجديد・الفاليو〡♻️") return await i.reply({ content: "❌ **عذراً، هذا الأمر متاح فقط في روم تجديد・الفاليو〡♻️**", flags: [Discord.MessageFlags.Ephemeral] });
                 const targetChar = i.options.getString("name");
-                if (!itemsDatabase[targetChar]) return await i.reply({ content: "❌ **هذه الشخصية غير مسجلة في قاعدة البيانات**", flags: [Discord.MessageFlags.Ephemeral] });
+                if (!itemsDatabase[targetChar]) return await i.reply({ content: "❌ **هذه الشخصية غير مسجلة in قاعدة البيانات**", flags: [Discord.MessageFlags.Ephemeral] });
                 const currentData = itemsDatabase[targetChar];
                 
                 const modalId = `fd_edit_${targetChar.replace(/\s+/g, '-')}`;
@@ -440,10 +433,39 @@ client.on("interactionCreate", async (i) => {
                 if (i.channel.name !== "فاليو〡💰") return await i.reply({ content: "❌ **عذراً، يمكنك استخدام أمر الأسعار فقط في روم فاليو〡💰**", flags: [Discord.MessageFlags.Ephemeral] });
                 
                 await i.deferReply(); 
-                const name = i.options.getString("name");
+                let name = i.options.getString("name");
                 const mut = i.options.getString("mutation") || "none";
-                const data = getItemData(name);
                 
+                if (!itemsDatabase[name]) {
+                    const allItems = Object.keys(itemsDatabase);
+                    let closestName = null;
+                    let highestScore = 0;
+                    
+                    allItems.forEach(item => {
+                        let score = 0;
+                        const minLen = Math.min(name.length, item.length);
+                        for (let idx = 0; idx < minLen; idx++) {
+                            if (name.toLowerCase()[idx] === item.toLowerCase()[idx]) score++;
+                        }
+                        if (score > highestScore) {
+                            highestScore = score;
+                            closestName = item;
+                        }
+                    });
+                    
+                    if (closestName && highestScore >= 2) {
+                        name = closestName;
+                    } else {
+                        const noItemEmbed = new Discord.EmbedBuilder()
+                            .setColor("#FF0000")
+                            .setTitle("❌ شخصية غير مسجلة")
+                            .setDescription(`عذراً، لا توجد هذه الشخصية \`${name}\` في قاعدة بيانات السوق حالياً!\n\n💡 **تلميح:** تأكد من إدخال الاسم بشكل صحيح أو استخدام خيار الإكمال التلقائي.`)
+                            .setTimestamp();
+                        return await i.editReply({ embeds: [noItemEmbed] });
+                    }
+                }
+                
+                const data = getItemData(name);
                 let p = String(data.basePrice), strVal = data.strawberry, draVal = data.dragon, garVal = data.garama || "15.00", demVal = data.demand, finalTime = "لم يتم التجديد بعد", finalIncome = data.income || "10M/s"; 
                 const comboKey = `${mut.toLowerCase()}_none`;
                 
@@ -463,7 +485,6 @@ client.on("interactionCreate", async (i) => {
                     if (data.lastUpdated) finalTime = data.lastUpdated;
                 }
                 
-                // تصفير وعرض علامة الفراغ النظيف لجميع خانات الشخصيات غير المجددة مسبقا يدويا
                 if (finalTime === "لم يتم التجديد بعد") {
                     p = "0.00";
                     strVal = "—";
@@ -542,7 +563,6 @@ client.on("interactionCreate", async (i) => {
                 if (!itemsDatabase[targetItem]) itemsDatabase[targetItem] = { income: "Not Set Yet", obtained: "Not Set Yet", status: "Unknown", type: "SECRET", customEmoji: "", combosData: {} };
                 if (!itemsDatabase[targetItem].combosData) itemsDatabase[targetItem].combosData = {};
                 
-                // سحب وحفظ يوزر نيم الإداري الذي قام بالتجديد مع التاريخ داخل ملف الـ json
                 const currentTimestamp = `بواسطة \`${i.user.username}\` في <t:${Math.floor(Date.now() / 1000)}:f>`;
                 
                 if (!selectedMut || selectedMut.toLowerCase() === "none") {
@@ -569,13 +589,40 @@ client.on("interactionCreate", async (i) => {
                 if (targetChannel) await targetChannel.send({ embeds: [updateEmbed] });
                 return await i.reply({ content: "✅ **تم تعديل الفاليو بنجاح، وتثبيته بشكل دائم داخل ملف database.json بنجاح صاروخي!**", flags: [Discord.MessageFlags.Ephemeral] });
             }
+
             if (i.customId.startsWith("mdrp_")) {
                 const charName = i.customId.split("_").slice(1).join(" ").replace(/_/g, " ");
                 const issueType = i.fields.getTextInputValue("issue_type"); const issueDetails = i.fields.getTextInputValue("issue_details");
                 const targetChannel = i.guild.channels.cache.find(c => c.name === "تجديد・الفاليو〡♻️");
+                
                 const reportEmbed = new Discord.EmbedBuilder().setColor("#FF0000").setTitle("🚩 بلاغ وشكوى جديدة حول الفاليو").setDescription(`قام العضو **${i.user.username}** (ID: \`${i.user.id}\`) بتقديم بلاغ فوري عن شخصية في السوق.`).addFields({ name: "🧸 الشخصية المستهدفة", value: `\`${charName}\``, inline: true }, { name: "📋 موضوع الشكوى", value: `\`\`\`\n${issueType}\`\`\`` }, { name: "🎨 لون الشخصية المرفق", value: `\`\`\`\n${issueDetails}\`\`\`` }).setTimestamp();
-                if (targetChannel) await targetChannel.send({ embeds: [reportEmbed] });
+                
+                const replyActionRow = new Discord.ActionRowBuilder().addComponents(
+                    new Discord.ButtonBuilder().setCustomId(`admin_reply_${i.user.id}_${charName.replace(/\s+/g, '-')}`).setLabel("✉️ رد على الشكوى").setStyle(2)
+                );
+
+                if (targetChannel) await targetChannel.send({ embeds: [reportEmbed], components: [replyActionRow] });
                 return await i.reply({ content: "✅ **تم إرسال شكواك وبلاغك بنجاح إلى روم تجديد・الفاليو〡♻️ للمراجعة الفورية! شكراً لك.**", flags: [Discord.MessageFlags.Ephemeral] });
+            }
+
+            if (i.customId.startsWith("submit_rep_")) {
+                const parts = i.customId.split("_");
+                const targetMemberId = parts[2];
+                const charName = parts.slice(3).join(" ").replace(/-/g, " ");
+                const adminReplyContent = i.fields.getTextInputValue("admin_reply_text");
+                
+                const responseEmbed = new Discord.EmbedBuilder()
+                    .setColor("#00FFFF")
+                    .setTitle("💬 رد إداري حول بلاغ الفاليو")
+                    .setDescription(`تمت مراجعة بلاغك الخاص بالشخصية \`${charName}\` من قبل الإدارة.`)
+                    .addFields(
+                        { name: "👑 المسؤول المراجع", value: `\`${i.user.username}\``, inline: true },
+                        { name: "✉️ نص الرد الإداري المعتمد", value: `\`\`\`\n${adminReplyContent}\`\`\`` }
+                    )
+                    .setTimestamp();
+                
+                await i.channel.send({ content: `🔔 **رد فوري مخصص للعضو صاحب الشكوى:** <@${targetMemberId}>`, embeds: [responseEmbed] });
+                return await i.reply({ content: "✅ **تم إرسال ردك فوراً ومنشن العضو بنجاح كلي!**", flags: [Discord.MessageFlags.Ephemeral] });
             }
         }
         if (i.isStringSelectMenu()) { 
@@ -587,6 +634,19 @@ client.on("interactionCreate", async (i) => {
         } 
         if (i.isButton()) { 
             const cleanButtonName = i.customId.split("_").slice(1).join(" ").replace(/_/g, " "), userId = i.user.id; 
+            
+            if (i.customId.startsWith("admin_reply_")) {
+                const parts = i.customId.split("_");
+                const memberId = parts[2];
+                const itemChar = parts.slice(3).join("_");
+                
+                const replyModal = new Discord.ModalBuilder().setCustomId(`submit_rep_${memberId}_${itemChar}`).setTitle("الرد الفوري على الشكوى");
+                replyModal.addComponents(
+                    new Discord.ActionRowBuilder().addComponents(new Discord.TextInputBuilder().setCustomId("admin_reply_text").setLabel("اكتب ردك المعتمد هنا للعضو").setPlaceholder("اكتب هنا نص الرد أو التعديل الذي تم على الفاليو...").setStyle(Discord.TextInputStyle.Paragraph).setRequired(true))
+                );
+                return await i.showModal(replyModal);
+            }
+
             if (i.customId.startsWith("rp_")) {
                 const reportModal = new Discord.ModalBuilder().setCustomId(`mdrp_${cleanButtonName.replace(/\s+/g, '_')}`).setTitle("Report an issue");
                 reportModal.addComponents(
@@ -640,10 +700,5 @@ client.on("messageCreate", async (msg) => {
         }
     } catch (error) { console.error("Error adding reactions in suggestions channel:", error); }
 });
-
-if (!token) {
-  console.error(" خطأ: التوكن غير موجود أو لم يتم قراءته من متغيرات Railway!");
-  process.exit(1);
-}
 
 client.login(token);
