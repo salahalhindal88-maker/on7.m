@@ -3,8 +3,8 @@ const path = require("path");
 const Discord = require("discord.js");
 
 // مسارات قاعدة البيانات
-const DB_PATH = path.join(dirname, "database.json");
-const CONFIG_DB_PATH = path.join(dirname, "config_database.json");
+const DB_PATH = path.join(__dirname, "database.json");
+const CONFIG_DB_PATH = path.join(__dirname, "config_database.json");
 
 // جلب التوكن بشكل آمن (يعمل محلياً ومع Railway)
 let token;
