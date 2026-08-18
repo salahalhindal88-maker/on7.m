@@ -1,18 +1,27 @@
-const DB_PATH = path.join(__dirname, "database.json");
 const fs = require("fs");
 const path = require("path");
-const { token } = require("./config.json");
+const Discord = require("discord.js");
 
-const client = new Discord.Client({ 
+// مسارات قاعدة البيانات
+const DB_PATH = path.join(dirname, "database.json");
+const CONFIG_DB_PATH = path.join(dirname, "config_database.json");
+
+// جلب التوكن بشكل آمن (يعمل محلياً ومع Railway)
+let token;
+try {
+  const config = require("./config.json");
+  token = config.token;
+} catch (error) {
+  token = process.env.TOKEN;
+}
+
+const client = new Discord.Client({
     intents: [
-        Discord.GatewayIntentBits.Guilds, 
+        Discord.GatewayIntentBits.Guilds,
         Discord.GatewayIntentBits.GuildMessages,
         Discord.GatewayIntentBits.MessageContent
-    ] 
+    ]
 });
-
-const DB_PATH = path.join(__dirname, "database.json");
-const CONFIG_DB_PATH = path.join(__dirname, "config_database.json");
 
 let itemsDatabase = {};
 let customSystemEmojis = { mutations: {}, traits: {} };
