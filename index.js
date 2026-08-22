@@ -703,4 +703,4 @@ client.on("messageCreate", async (msg) => {
     } catch (error) { console.error("Error adding reactions in suggestions channel:", error); }
 });
 
-client.login(token); // صحيح 100%
+client.login(process.env.TOKEN);
