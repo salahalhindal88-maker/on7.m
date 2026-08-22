@@ -1,27 +1,18 @@
+const Discord = require("discord.js");
 const fs = require("fs");
 const path = require("path");
-const Discord = require("discord.js");
+const { token } = require("./config.json");
 
-// مسارات قاعدة البيانات
-const DB_PATH = path.join(__dirname, "database.json");
-const CONFIG_DB_PATH = path.join(__dirname, "config_database.json");
-
-// جلب التوكن بشكل آمن (يعمل محلياً ومع Railway)
-let token;
-try {
-  const config = require("./config.json");
-  token = config.token;
-} catch (error) {
-  token = process.env.TOKEN;
-}
-
-const client = new Discord.Client({
+const client = new Discord.Client({ 
     intents: [
-        Discord.GatewayIntentBits.Guilds,
+        Discord.GatewayIntentBits.Guilds, 
         Discord.GatewayIntentBits.GuildMessages,
         Discord.GatewayIntentBits.MessageContent
-    ]
+    ] 
 });
+
+const DB_PATH = path.join(__dirname, "database.json");
+const CONFIG_DB_PATH = path.join(__dirname, "config_database.json");
 
 let itemsDatabase = {};
 let customSystemEmojis = { mutations: {}, traits: {} };
@@ -29,8 +20,10 @@ function loadDatabase() {
     try {
         if (fs.existsSync(DB_PATH)) {
             const data = fs.readFileSync(DB_PATH, "utf8");
-            itemsDatabase = JSON.parse(data);
-            console.log(`[الذاكرة] تم تحميل عدد (${Object.keys(itemsDatabase).length}) شخصية بنجاح من قاعدة البيانات المعزولة!`);
+            if (data && data.trim().length > 0) {
+                itemsDatabase = JSON.parse(data);
+                console.log(`[الذاكرة] تم تحميل عدد (${Object.keys(itemsDatabase).length}) شخصية بنجاح. القفل اليدوي نشط 100%!`);
+            }
         } else {
             itemsDatabase = {
                 "Antonio": { basePrice: 85, strawberry: "0.16", dragon: "6 Dragons", garama: "118.06", income: "125M/s", demand: "■■■■■▢▢▢▢▢ `3/10` ▼", obtained: "First Craft Machine", status: "Unstable", type: "SECRET", customEmoji: "", combosData: {} }
@@ -91,7 +84,7 @@ function getItemData(name) {
         strawberry: "—", 
         dragon: "—", 
         garama: "—", 
-        income: "Not Set Yet", 
+        income: "—", 
         demand: "▢▢▢▢▢▢▢▢▢▢ `0/10` ▬", 
         obtained: "Not Set Yet", 
         status: "Unknown", 
@@ -358,7 +351,7 @@ client.on("interactionCreate", async (i) => {
             if (i.commandName === "edit_full_details") {
                 if (i.channel.name !== "تجديد・الفاليو〡♻️") return await i.reply({ content: "❌ **عذراً، هذا الأمر متاح فقط في روم تجديد・الفاليو〡♻️**", flags: [Discord.MessageFlags.Ephemeral] });
                 const targetChar = i.options.getString("name");
-                if (!itemsDatabase[targetChar]) return await i.reply({ content: "❌ **هذه الشخصية غير مسجلة in قاعدة البيانات**", flags: [Discord.MessageFlags.Ephemeral] });
+                if (!itemsDatabase[targetChar]) return await i.reply({ content: "❌ **هذه الشخصية غير مسجلة في قاعدة البيانات**", flags: [Discord.MessageFlags.Ephemeral] });
                 const currentData = itemsDatabase[targetChar];
                 
                 const modalId = `fd_edit_${targetChar.replace(/\s+/g, '-')}`;
