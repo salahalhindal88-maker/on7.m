@@ -113,36 +113,25 @@ function getTraitCustomEmoji(guild, traitName) {
     if (customSystemEmojis.traits[t]) return customSystemEmojis.traits[t];
     return "🏷️";
 }
-function getItemEmoji(guild, name, mutName = "none") {
-    const cleanName = name ? name.toLowerCase().replace(/\s+/g, '_') : "";
-    if (mutName && mutName.toLowerCase() !== "none") return "";
-    
-    let baseEmoji = "<:1509485493803290666:1537149336641609788>";
-    const boxEmoji = "<:1509485493803290666:1537149336641609788>";
-    
-    const data = itemsDatabase[name];
-    if (data && data.customEmoji) { baseEmoji = data.customEmoji; } else {
-        const staticMap = {
-            "arcadragon": "<:Arcadragon_Brainrot:1537321826034778112>", "bearito_cabinito": "<:Bearito_Cabinito:1537332844597088286>", 
-            "boppin_bunny": "<:Boppin_Bunny:1537334991023906887>", "bunny_and_eggy": "<:Bunny_and_Eggy:1537336497454325831>", 
-            "burguro_and_fryuro": "<:BurguroAndFryuro:1537336582674321518>", "capitano_moby": "<:Capitano_Moby:1537336606476730368>", 
-            "cash_or_card": "<:Cash_or_Card_New:1537340055612424252>", "caylusaurus": "<:CAYLSERES:1537340080832782376>", 
-            "celestial_pegasus": "<:Celestial_Pegasus:1537344826553667604>", "cerberus": "<:Cerberus:1537346078163214376>", 
-            "chillin_chili": "<:Chilin:1537346123726069820>", "chipso_and_queso": "<:Chipsoqueso:1537346234770137159>", 
-            "cloverat_clapat": "<:Cloverat_Clapat:1537346196782321694>", "cooki_and_milki": "<:Cooki_and_Milki:1537346259226984459>", 
-            "dragon_aquanini": "<:Dragon_aquanini_but_high_graphis:1537346331813875712>"
-        };
-        if (staticMap[cleanName]) baseEmoji = staticMap[cleanName]; else {
-            const found = guild.emojis.cache.find(e => e.name.toLowerCase() === cleanName || e.name.toLowerCase() === name.toLowerCase());
-            if (found) baseEmoji = `<:${found.name}:${found.id}>`;
-        }
-    }
-    return baseEmoji === boxEmoji ? baseEmoji : `${baseEmoji}${boxEmoji}`;
-}
-function getItemImageURL(guild, name) {
+
+function getItemImageURL(guild, name, mutName = "none") {
     if (!name) return null;
     const data = itemsDatabase[name];
-    if (data && data.customEmoji && data.customEmoji.includes(":")) {
+    if (!data) return null;
+
+    // محرك الفحص الذكي: لو تم حفظ صورة مخصصة لهذا اللون (الطفرة)، يتم سحبها وعرضها مكبرة بالأسفل فوراً!
+    if (mutName && mutName !== "none" && data.combosData) {
+        const comboKey = `${mutName.toLowerCase()}_none`;
+        if (data.combosData[comboKey] && data.combosData[comboKey].customComboImage) {
+            return data.combosData[comboKey].customComboImage;
+        }
+    }
+    
+    if (data.customEmoji && (data.customEmoji.startsWith("http://") || data.customEmoji.startsWith("https://"))) {
+        return data.customEmoji;
+    }
+    
+    if (data.customEmoji && data.customEmoji.includes(":")) {
         try {
             const emojiId = data.customEmoji.split(":").pop().replace(">", "");
             const customEmojiObj = guild.emojis.cache.get(emojiId);
@@ -180,6 +169,40 @@ function getDragonCannelloniFieldEmoji(guild) {
     const e = guild.emojis.cache.find(em => em.name.toLowerCase() === "dragon_cannelloni" || em.name.toLowerCase() === "dragoncannelloni");
     return e ? `<:${e.name}:${e.id}>` : "🐉";
 }
+function getItemEmoji(guild, name, mutName = "none") {
+    const cleanName = name ? name.toLowerCase().replace(/\s+/g, '_') : "";
+    if (mutName && mutName.toLowerCase() !== "none") return "";
+    
+    let baseEmoji = "<:1509485493803290666:1537149336641609788>";
+    const boxEmoji = "<:1509485493803290666:1537149336641609788>";
+    
+    const data = itemsDatabase[name];
+    if (data && data.customEmoji) { 
+        if (!isNaN(data.customEmoji) && data.customEmoji.trim().length > 10) {
+            baseEmoji = `<:${cleanName}:${data.customEmoji.trim()}>`;
+        } else {
+            baseEmoji = data.customEmoji; 
+        }
+    } else {
+        const staticMap = {
+            "arcadragon": "<:Arcadragon_Brainrot:1537321826034778112>", "bearito_cabinito": "<:Bearito_Cabinito:1537332844597088286>", 
+            "boppin_bunny": "<:Boppin_Bunny:1537334991023906887>", "bunny_and_eggy": "<:Bunny_and_Eggy:1537336497454325831>", 
+            "burguro_and_fryuro": "<:BurguroAndFryuro:1537336582674321518>", "capitano_moby": "<:Capitano_Moby:1537336606476730368>", 
+            "cash_or_card": "<:Cash_or_Card_New:1537340055612424252>", "caylusaurus": "<:CAYLSERES:1537340080832782376>", 
+            "celestial_pegasus": "<:Celestial_Pegasus:1537344826553667604>", "cerberus": "<:Cerberus:1537346078163214376>", 
+            "chillin_chili": "<:Chilin:1537346123726069820>", "chipso_and_queso": "<:Chipsoqueso:1537346234770137159>", 
+            "cloverat_clapat": "<:Cloverat_Clapat:1537346196782321694>", "cooki_and_milki": "<:Cooki_and_Milki:1537346259226984459>", 
+            "dragon_aquanini": "<:Dragon_aquanini_but_high_graphis:1537346331813875712>"
+        };
+        if (staticMap[cleanName]) baseEmoji = staticMap[cleanName]; else {
+            const found = client.emojis.cache.find(e => e.name.toLowerCase() === cleanName || e.name.toLowerCase() === name.toLowerCase()) || 
+                          guild.emojis.cache.find(e => e.name.toLowerCase() === cleanName || e.name.toLowerCase() === name.toLowerCase());
+            if (found) baseEmoji = `<:${found.name}:${found.id}>`;
+        }
+    }
+    return baseEmoji === boxEmoji ? baseEmoji : `${baseEmoji}${boxEmoji}`;
+}
+// تم دمج الجزء السابع بالكامل ضمن الهيكل النقي للسكربت لتفادي الثغرات
 function generateMutationMenu(guild, cleanName, userId) {
     if (!userSelections[userId]) userSelections[userId] = { mutation: "none" };
     const data = getItemData(cleanName), sm = userSelections[userId].mutation || "none";
@@ -191,7 +214,7 @@ function generateMutationMenu(guild, cleanName, userId) {
     
     const priceDisplay = isNaN(parseFloat(cp)) ? cp : `$${parseFloat(cp).toFixed(2)}`;
     const embed = new Discord.EmbedBuilder().setColor(getEmbedColor(sm)).setTitle(`💵 🧸 ${cleanName} • ${sm !== "none" ? getMutationEmoji(client, guild, sm)+sm : "No mutation"}`).setDescription(`**${priceDisplay}**\n\nTap mutations below, or 🔍 **Search**.`);
-    const imgUrl = getItemImageURL(guild, cleanName); 
+    const imgUrl = getItemImageURL(guild, cleanName, sm); // تمرير الطفرة لجلب الصورة المخصصة للون إن وجدت
     if (imgUrl) { embed.setThumbnail(imgUrl); embed.setImage(imgUrl); }
 
     const mOpts = mutationsList.map(m => ({ label: m, value: m })); mOpts.unshift({ label: "🚫 No mutation", value: "none" });
@@ -226,19 +249,20 @@ client.once("ready", async () => {
 
     const additemCommand = new Discord.SlashCommandBuilder()
         .setName("additem")
-        .setDescription("إضافة شخصية جديدة بالكامل وسعرها ونوع فئتها وإيموجي مخصص مباشرة من ديسكورد")
+        .setDescription("إضافة شخصية جديدة بالكامل وسعرها وصورتها المباشرة")
         .addStringOption(o => o.setName("name").setDescription("اسم الشخصية الجديدة").setRequired(true))
         .addNumberOption(o => o.setName("price").setDescription("السعر الأساسي").setRequired(true))
         .addStringOption(o => o.setName("type").setDescription("نوع فئة الشخصية").setRequired(true).addChoices({ name: "SECRET", value: "SECRET" }, { name: "OG", value: "OG" }, { name: "BRAINROT GOD", value: "BRAINROT GOD" }))
-        .addStringOption(o => o.setName("emoji").setDescription("ضع إيموجي الشخصية أو ملصقها المخصص هنا").setRequired(false));
+        .addAttachmentOption(o => o.setName("image").setDescription("ارفع صورة الشخصية المباشرة من جهازك أو جوالك").setRequired(false));
 
     const edititemCommand = new Discord.SlashCommandBuilder()
         .setName("edititem")
-        .setDescription("تعديل شامل لبيانات وإيموجيات ونصوص الشخصية وقاعدة البيانات")
+        .setDescription("تعديل شامل لبيانات وإيموجيات ونصوص وصور الشخصية وقاعدة البيانات")
         .addStringOption(o => o.setName("target").setDescription("اختر الشخصية المراد تعديلها").setRequired(false).setAutocomplete(true))
+        .addStringOption(o => o.setName("mutation_target").setDescription("اكتب اسم الطفرة أو اللون (مثال: Cursed) لربط الصورة به حصرياً").setRequired(false).setAutocomplete(true)) // الحقل المطور 🎯
         .addBooleanOption(o => o.setName("delete_item").setDescription("حذف هذه الشخصية نهائياً من النظام").setRequired(false))
         .addStringOption(o => o.setName("new_name").setDescription("اسم جديد بالكامل للشخصية (اختياري)").setRequired(false))
-        .addStringOption(o => o.setName("new_emoji").setDescription("إيموجي مخصص جديد، أو اكتب delete لحذفه (اختياري)").setRequired(false))
+        .addAttachmentOption(o => o.setName("new_image").setDescription("ارفع صورة جديدة للشخصية أو لطفرتها المحددة (اختياري)").setRequired(false))
         .addNumberOption(o => o.setName("new_price").setDescription("تعديل السعر الأساسي لشخصية (اختياري)").setRequired(false))
         .addStringOption(o => o.setName("new_obtained").setDescription("تعديل خانة (صنع من) في الـ Full Details").setRequired(false))
         .addStringOption(o => o.setName("new_income").setDescription("تعديل حقل (سعر الشخصية/الإنتاج) في الـ Full Details").setRequired(false))
@@ -251,7 +275,7 @@ client.once("ready", async () => {
     
     try { 
         await client.application.commands.set([valueCommand, checkCommand, editFullDetailsCommand, additemCommand, edititemCommand]); 
-        console.log(`[متصل] تم تحميل النظام بنجاح: ${client.user.tag}`); 
+        console.log(`[متصل] تم تحميل نظام ربط صور الألوان بنجاح: ${client.user.tag}`); 
     } catch (err) { console.error(err); }
 });
 client.on("interactionCreate", async (i) => {
@@ -270,9 +294,10 @@ client.on("interactionCreate", async (i) => {
                 if (i.channel.name !== "تجديد・الفاليو〡♻️") return await i.reply({ content: "❌ **عذراً، استخدام أمر التعديل متاح فقط في روم تجديد・الفاليو〡♻️**", flags: [Discord.MessageFlags.Ephemeral] });
                 
                 const target = i.options.getString("target");
+                const mutationTarget = i.options.getString("mutation_target"); // جلب حقل الطفرة المستهدفة
                 const deleteFlag = i.options.getBoolean("delete_item");
                 const newName = i.options.getString("new_name");
-                const newEmoji = i.options.getString("new_emoji");
+                const newImageAttachment = i.options.getAttachment("new_image"); 
                 const newPrice = i.options.getNumber("new_price");
                 const newObtained = i.options.getString("new_obtained");
                 const newIncome = i.options.getString("new_income");
@@ -299,15 +324,23 @@ client.on("interactionCreate", async (i) => {
                         logMsg += `• تغيير الاسم من \`${target}\` إلى \`${newName}\`\n`; 
                     }
                     const currentKey = newName || target;
-                    if (newEmoji) { 
-                        if(newEmoji.toLowerCase() === "delete") { 
-                            itemsDatabase[currentKey].customEmoji = ""; 
-                            logMsg += "• تم حذف الإيموجي المخصص للشخصية والعودة للافتراضي\n"; 
-                        } else { 
-                            itemsDatabase[currentKey].customEmoji = newEmoji; 
-                            logMsg += `• تحديث إيموجي الشخصية إلى: ${newEmoji}\n`; 
-                        } 
+                    
+                    // حقن اللوجيك المطور: لو تم تحديد طفرة معينة يتم حفظ الصورة بداخل توليفة اللون مباشرة
+                    if (newImageAttachment) {
+                        if (mutationTarget && mutationTarget.toLowerCase() !== "none") {
+                            if (!itemsDatabase[currentKey].combosData) itemsDatabase[currentKey].combosData = {};
+                            const comboKey = `${mutationTarget.toLowerCase()}_none`;
+                            if (!itemsDatabase[currentKey].combosData[comboKey]) {
+                                itemsDatabase[currentKey].combosData[comboKey] = { basePrice: itemsDatabase[currentKey].basePrice, strawberry: "—", dragon: "—", garama: "—", income: "—", demand: "▢▢▢▢▢▢▢▢▢▢" };
+                            }
+                            itemsDatabase[currentKey].combosData[comboKey].customComboImage = newImageAttachment.url;
+                            logMsg += `• تم ربط وحفظ صورة مباشرة مخصصة للون \`${mutationTarget}\` بنجاح 🖼️\n`;
+                        } else {
+                            itemsDatabase[currentKey].customEmoji = newImageAttachment.url;
+                            logMsg += `• تم رفع وتحديث صورة الشخصية المباشرة بنجاح 🖼️\n`;
+                        }
                     }
+                    
                     if (newPrice) { 
                         itemsDatabase[currentKey].basePrice = newPrice; 
                         logMsg += `• تحديث السعر الأساسي للشخصية إلى \`$${newPrice}\`\n`; 
@@ -367,25 +400,31 @@ client.on("interactionCreate", async (i) => {
 
             if (i.commandName === "additem") {
                 if (i.channel.name !== "تجديد・الفاليو〡♻️") return await i.reply({ content: "❌ **عذراً، أمر إضافة الشخصيات متاح فقط في روم تجديد・الفاليو〡♻️**", flags: [Discord.MessageFlags.Ephemeral] });
-                const newName = i.options.getString("name"), newPrice = i.options.getNumber("price"), newType = i.options.getString("type"), newEmoji = i.options.getString("emoji") || "";
+                const newName = i.options.getString("name"), newPrice = i.options.getNumber("price"), newType = i.options.getString("type");
+                const imageAttachment = i.options.getAttachment("image"); 
+                
+                const saveImageUrl = imageAttachment ? imageAttachment.url : "";
                 
                 itemsDatabase[newName] = { 
                     basePrice: newPrice, strawberry: "0.05", dragon: "1 Dragons", garama: "15.00", 
-                    income: "10M/s", demand: "■■▢▢▢▢▢▢▢▢ `2/10` ▬", obtained: "Custom Command Added", status: "Stable", type: newType, customEmoji: newEmoji, combosData: {} 
+                    income: "10M/s", demand: "■■▢▢▢▢▢▢▢▢ `2/10` ▬", obtained: "Custom Command Added", status: "Stable", type: newType, customEmoji: saveImageUrl, combosData: {} 
                 };
                 
                 saveDatabase(); 
+                
+                const imageLogDisplay = imageAttachment ? "`تم رفع صورة مباشرة للملف بنجاح 🖼️`" : "`None`";
+
                 return await i.reply({ 
                     embeds: [
                         new Discord.EmbedBuilder()
                             .setColor("#00FF00")
                             .setTitle("✅ تم إضافة شخصية جديدة بنجاح!")
-                            .setDescription(`قام الإداري **${i.user.username}** بإنشاء حقل الشخصية فوراً.`)
+                            .setDescription(`قام الإداري **${i.user.username}** بإنشاء حقل الشخصية فوراً داخل قاعدة البيانات اليدوية الصارمة.`)
                             .addFields(
                                 { name: "🧸 اسم الشخصية", value: `\`${newName}\``, inline: true }, 
                                 { name: "💵 السعر المعتمد", value: `\`$${newPrice.toFixed(2)}\``, inline: true }, 
                                 { name: "🏷️ فئة ونوع الفخامة", value: `\`${newType}\``, inline: true }, 
-                                { name: "✨ الإيموجي المربوط", value: newEmoji ? newEmoji : "`None`", inline: true }
+                                { name: "✨ الصورة المكبرة المربوطة", value: imageLogDisplay, inline: true }
                             )
                             .setTimestamp()
                     ] 
@@ -521,7 +560,7 @@ client.on("interactionCreate", async (i) => {
                     )
                     .setFooter({ text: "SAB Market Value" });
                 
-                const imgUrl = getItemImageURL(i.guild, name); 
+                const imgUrl = getItemImageURL(i.guild, name, mut); // تمرير نوع الطفرة لعرض الصورة المخصصة للون
                 if (i.guild && imgUrl) { 
                     embed.setThumbnail(imgUrl); 
                     embed.setImage(imgUrl); 
@@ -580,10 +619,13 @@ client.on("interactionCreate", async (i) => {
                 const comboKey = `${String(selectedMut || "none").toLowerCase()}_none`;
                 let oldPrice = itemsDatabase[targetItem].combosData[comboKey] ? String(itemsDatabase[targetItem].combosData[comboKey].basePrice) : String(itemsDatabase[targetItem].basePrice || "لا يوجد");
                 
-                itemsDatabase[targetItem].combosData[comboKey] = { basePrice: newPrice, strawberry: newStrawberry, dragon: newDragon, garama: newGarama, income: newIncome, demand: demand, lastUpdated: currentTimestamp };
+                // الحفاظ على رابط الصورة المخصصة للون إن كانت مرفوعة مسبقاً عبر edititem
+                const existingImage = itemsDatabase[targetItem].combosData[comboKey] ? itemsDatabase[targetItem].combosData[comboKey].customComboImage : "";
+
+                itemsDatabase[targetItem].combosData[comboKey] = { basePrice: newPrice, strawberry: newStrawberry, dragon: newDragon, garama: newGarama, income: newIncome, demand: demand, lastUpdated: currentTimestamp, customComboImage: existingImage };
                 saveDatabase(); 
                 
-                const finalImgUrl = getItemImageURL(i.guild, targetItem);
+                const finalImgUrl = getItemImageURL(i.guild, targetItem, selectedMut);
                 const updateEmbed = new Discord.EmbedBuilder().setColor(getEmbedColor(selectedMut)).setTitle(`🔄 تم تجديد وتحديث الفاليو بنجاح!`).setDescription(`قام الإداري **${i.user.username}** بتحديث بيانات حقول عنصر في السوق فوراً وبأعلى استقرار وآمن وثبات دائم في الداتابيز.`).addFields({ name: "🧸 اسم الشخصية", value: `\`\`\`\n${targetItem}\`\`\``, inline: true }, { name: "✨ الطفرة المحددة", value: `\`\`\`\n${selectedMut || "بدون طفرة"}\`\`\``, inline: true }, { name: "📉 السعر القديم", value: `\`${isNaN(parseFloat(oldPrice)) ? oldPrice : `$${parseFloat(oldPrice).toFixed(2)}`}\``, inline: true }, { name: "📈 السعر الجديد", value: `\`${isNaN(parseFloat(newPrice)) ? newPrice : `$${parseFloat(newPrice).toFixed(2)}`}\``, inline: true }, { name: "📈 سعر الشخصية المنفصل (الإنتاج)", value: `\`${newIncome}\`` }, { name: "📊 حالة الطلب", value: `\`${demand}\`` }, { name: "📅 وقت التجديد الحالي", value: currentTimestamp }).setFooter({ text: "نظام إدارة وتجديد الأسعار التلقائي" }).setTimestamp();
                 if (finalImgUrl) { updateEmbed.setThumbnail(finalImgUrl); updateEmbed.setImage(finalImgUrl); }
                 
@@ -644,7 +686,7 @@ client.on("interactionCreate", async (i) => {
                 
                 const replyModal = new Discord.ModalBuilder().setCustomId(`submit_rep_${memberId}_${itemChar}`).setTitle("الرد الفوري على الشكوى");
                 replyModal.addComponents(
-                    new Discord.ActionRowBuilder().addComponents(new Discord.TextInputBuilder().setCustomId("admin_reply_text").setLabel("اكتب ردك المعتمد هنا للعضو").setPlaceholder("اكتب هنا نص الرد أو التعديل الذي تم على الفاليو...").setStyle(Discord.TextInputStyle.Paragraph).setRequired(true))
+                    new Discord.ActionRowBuilder().addComponents(new Discord.TextInputBuilder().setCustomId("admin_reply_text").setLabel("اتب ردك المعتمد هنا للعضو").setPlaceholder("اكتب هنا نص الرد أو التعديل الذي تم على الفاليو...").setStyle(Discord.TextInputStyle.Paragraph).setRequired(true))
                 );
                 return await i.showModal(replyModal);
             }
@@ -659,6 +701,8 @@ client.on("interactionCreate", async (i) => {
             }
             if (!userSelections[userId]) userSelections[userId] = { mutation: "none" }; 
             
+            const currentMutationSelected = userSelections[userId].mutation || "none";
+
             if (i.customId.startsWith("tm_")) { 
                 await i.deferReply({ flags: [Discord.MessageFlags.Ephemeral] }); 
                 const menuData = generateMutationMenu(i.guild, cleanButtonName, userId);
@@ -669,7 +713,7 @@ client.on("interactionCreate", async (i) => {
                 await i.deferReply({ flags: [Discord.MessageFlags.Ephemeral] });
                 const d = getItemData(cleanButtonName); 
                 const fdEmbed = new Discord.EmbedBuilder().setColor("#FF0000").setTitle(`📄 تفاصيل كاملة للشخصية: ${cleanButtonName}`).setDescription(d.type || "SECRET").addFields({ name: "📈 **سعر الشخصية/الإنتاج**", value: `— \`${d.income || "Not Set Yet"}\`` }, { name: "🛠️ **صنع من**", value: `— \`${d.obtained || "Not Set Yet"}\`` }, { name: "📌 **حالة الثبات (Status)**", value: `— \`${d.status || "Unknown"}\`` }).setFooter({ text: "SAB Market Full Details" });
-                const img = getItemImageURL(i.guild, cleanButtonName); if (img) { fdEmbed.setThumbnail(img); fdEmbed.setImage(img); } 
+                const img = getItemImageURL(i.guild, cleanButtonName, currentMutationSelected); if (img) { fdEmbed.setThumbnail(img); fdEmbed.setImage(img); } 
                 return await i.editReply({ embeds: [fdEmbed] }); 
             } 
             if (i.customId.startsWith("bclr_")) { await i.deferUpdate(); userSelections[userId] = { mutation: "none" }; return await i.editReply(generateMutationMenu(i.guild, cleanButtonName, userId)); } 
@@ -686,7 +730,7 @@ client.on("interactionCreate", async (i) => {
                 } else if (m !== "none") { fp = String(data.basePrice * (mutationMultipliers[m.toLowerCase()] || 1.0)); }
                 let priceDisplay = isNaN(parseFloat(fp)) ? fp : `$${parseFloat(fp).toFixed(2)}`; const currentType = data.type || "SECRET"; 
                 const finalEmbed = new Discord.EmbedBuilder().setColor(getEmbedColor(m)).setTitle(m !== "none" ? `${getItemEmoji(i.guild, cleanButtonName, m)} ${cleanButtonName} — ${getMutationEmoji(client, i.guild, m)} ${m}` : `${getItemEmoji(i.guild, cleanButtonName, m)} ${cleanButtonName}`).setDescription(currentType).addFields({ name: "💵 **سعر الشراء**", value: `— \`${priceDisplay}\`` }, { name: "Strawberry Elephant", value: `— \`${finalStr}\`` }, { name: "Dragon Cannelloni", value: `— \`${finalDra}\`` }, { name: "Garama And Madundung", value: `— \`${finalGar}\`` }, { name: "📊 **سعر الشخصية**", value: `— \`${finalIncome}\`` }, { name: "📊 **الطلب على الشخصية**", value: finalDem }).setFooter({ text: "SAB Market Value" });
-                const imgUrl = getItemImageURL(i.guild, cleanButtonName); if (imgUrl) { finalEmbed.setThumbnail(imgUrl); finalEmbed.setImage(imgUrl); }
+                const imgUrl = getItemImageURL(i.guild, cleanButtonName, m); if (imgUrl) { finalEmbed.setThumbnail(imgUrl); finalEmbed.setImage(imgUrl); }
                 
                 return await i.update({ embeds: [finalEmbed], components: [new Discord.ActionRowBuilder().addComponents(new Discord.ButtonBuilder().setCustomId(`fd_${cleanButtonName.replace(/\s+/g, '_')}`).setLabel("📄 Full Details").setStyle(2), new Discord.ButtonBuilder().setCustomId(`tm_${cleanButtonName.replace(/\s+/g, '_')}`).setLabel("🪐 Mutations & value").setStyle(1), new Discord.ButtonBuilder().setCustomId(`rp_${cleanButtonName.replace(/\s+/g, '_')}`).setLabel("🚩 شكوى").setStyle(2))] }); 
             } 
@@ -703,4 +747,4 @@ client.on("messageCreate", async (msg) => {
     } catch (error) { console.error("Error adding reactions in suggestions channel:", error); }
 });
 
-client.login(process.env.TOKEN);
+client.login(token);
