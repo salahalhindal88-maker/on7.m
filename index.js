@@ -228,8 +228,9 @@ function generateMutationMenu(guild, cleanName, userId) {
     );
     return { embeds: [embed], components: [new Discord.ActionRowBuilder().addComponents(mSel), row] };
 }
-client.once('clientReady', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
+client.once('clientReady', async () => {
+    await client.application.commands.set([valueCommand, checkCommand, editFullDetailsCommand, additemCommand, edititemCommand]);
+    console.log('تم تسجيل الأوامر بنجاح!');
 });
     const valueCommand = new Discord.SlashCommandBuilder()
         .setName("value")
