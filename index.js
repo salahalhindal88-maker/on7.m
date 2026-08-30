@@ -277,7 +277,9 @@ client.once('clientReady', async () => {
         .addStringOption(o => o.setName("global_emoji_value").setDescription("ضع الإيموجي الجديد للطفرة أو الصفة المحددة بالأعلى (اختياري)").setRequired(false));
     
     try { 
-        await client.application.commands.set([valueCommand, checkCommand, editFullDetailsCommand, additemCommand, edititemCommand]); 
+        client.application.commands.set([valueCommand, checkCommand, editFullDetailsCommand, additemCommand, edititemCommand])
+    .then(() => console.log('تم تسجيل الأوامر بنجاح!'))
+    .catch(console.error);
         console.log(`[متصل] تم تحميل نظام ربط صور الألوان بنجاح: ${client.user.tag}`); 
     } catch (err) { console.error(err); }
 });
