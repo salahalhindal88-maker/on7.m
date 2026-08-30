@@ -228,7 +228,9 @@ function generateMutationMenu(guild, cleanName, userId) {
     );
     return { embeds: [embed], components: [new Discord.ActionRowBuilder().addComponents(mSel), row] };
 }
-client.once("ready", async () => {
+client.once('clientReady', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+});
     const valueCommand = new Discord.SlashCommandBuilder()
         .setName("value")
         .setDescription("يعرض قيم وأسعار العناصر")
