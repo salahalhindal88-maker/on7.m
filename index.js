@@ -275,13 +275,14 @@ client.once('clientReady', async () => {
         .addStringOption(o => o.setName("global_mutation").setDescription("تعديل إيموجي طفرة عامة بالسيرفر (اختياري)").setRequired(false).setAutocomplete(true))
         .addStringOption(o => o.setName("global_trait").setDescription("تعديل إيموجي صفة عامة بالسيرفر (اختياري)").setRequired(false).setAutocomplete(true))
         .addStringOption(o => o.setName("global_emoji_value").setDescription("ضع الإيموجي الجديد للطفرة أو الصفة المحددة بالأعلى (اختياري)").setRequired(false));
-    
-    try { 
-        client.application.commands.set([valueCommand, checkCommand, editFullDetailsCommand, additemCommand, edititemCommand])
-    .then(() => console.log('تم تسجيل الأوامر بنجاح!'))
-    .catch(console.error);
-        console.log(`[متصل] تم تحميل نظام ربط صور الألوان بنجاح: ${client.user.tag}`); 
-    } catch (err) { console.error(err); }
+client.once('clientReady', async () => {
+    try {
+        await client.application.commands.set([valueCommand, checkCommand, editFullDetailsCommand, additemCommand, edititemCommand]);
+        console.log('تم تسجيل الأوامر بنجاح!');
+        console.log(`[متصل] تم تحميل نظام ربط صور الألوان بنجاح : ${client.user.tag}`);
+    } catch (err) {
+        console.error(err);
+    }
 });
 client.on("interactionCreate", async (i) => {
     try {
