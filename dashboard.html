@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>لوحة أسعار الشخصيات</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #0b1020;
+            color: #edf2ff;
+        }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; }
+        header { padding: 24px clamp(16px, 4vw, 48px); border-bottom: 1px solid #252d43; background: #10172a; }
+        h1 { margin: 0 0 6px; font-size: clamp(22px, 4vw, 30px); }
+        header p { margin: 0; color: #aab5ce; }
+        main { display: grid; grid-template-columns: minmax(230px, 310px) minmax(0, 1fr); gap: 20px; max-width: 1440px; margin: 24px auto; padding: 0 20px; }
+        .panel { background: #121a2e; border: 1px solid #27324c; border-radius: 14px; padding: 18px; }
+        .sidebar { align-self: start; }
+        input, button { font: inherit; }
+        input[type="search"], input[type="number"] { width: 100%; color: #edf2ff; background: #0b1020; border: 1px solid #34415e; border-radius: 8px; padding: 11px 12px; }
+        input:focus { outline: 2px solid #7797ff; border-color: transparent; }
+        .item-list { display: grid; gap: 7px; max-height: 68vh; overflow: auto; margin-top: 12px; }
+        .item-button { text-align: right; color: #dce5fb; background: transparent; border: 1px solid transparent; border-radius: 8px; padding: 10px; cursor: pointer; }
+        .item-button:hover, .item-button.selected { background: #202b46; border-color: #465a85; }
+        .editor h2 { margin-top: 0; }
+        .hint { color: #aab5ce; }
+        .field { display: grid; grid-template-columns: minmax(130px, 1fr) minmax(130px, 240px); align-items: center; gap: 14px; padding: 11px 0; border-bottom: 1px solid #27324c; }
+        .field label { overflow-wrap: anywhere; }
+        .section-title { margin: 24px 0 8px; font-size: 18px; }
+        .actions { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+        button.primary { color: white; background: #536fe0; border: 0; border-radius: 8px; padding: 11px 20px; cursor: pointer; font-weight: 600; }
+        button.primary:hover { background: #6681ed; }
+        button:disabled { opacity: .6; cursor: wait; }
+        #status { min-height: 24px; }
+        #status.error { color: #ff9292; }
+        #status.success { color: #83e3af; }
+        .empty { color: #aab5ce; padding: 16px 4px; }
+        @media (max-width: 760px) {
+            main { grid-template-columns: 1fr; padding: 0 12px; margin-top: 12px; }
+            .item-list { max-height: 220px; grid-template-columns: repeat(auto-fill, minmax(135px, 1fr)); }
+            .field { grid-template-columns: 1fr; gap: 7px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>لوحة أسعار الشخصيات</h1>
+        <p>عدّل السعر الأساسي أو أسعار الطفرات، ثم احفظ التغييرات في قاعدة بيانات البوت.</p>
+        <button id="logout" type="button" class="primary">تسجيل الخروج</button>
+    </header>
+    <main>
+        <aside class="panel sidebar">
+            <input id="search" type="search" placeholder="ابحث عن شخصية..." autocomplete="off" aria-label="ابحث عن شخصية">
+            <div id="item-list" class="item-list"><div class="empty">جارٍ تحميل الشخصيات...</div></div>
+        </aside>
+        <section id="editor" class="panel editor">
+            <div class="empty">اختر شخصية من القائمة لعرض أسعارها.</div>
+        </section>
+    </main>
+    <script>
+        const dashboardToken = "__DASHBOARD_TOKEN__";
+        const listElement = document.getElementById("item-list");
+        const searchElement = document.getElementById("search");
+        const editorElement = document.getElementById("editor");
+        let items = {};
+        let selectedName = "";
+
+        function displayName(key) {
+            if (key === "none_none") return "بدون طفرة";
+            return key.replace(/_none$/, "").replace(/_/g, " ");
+        }
+
+        function renderList() {
+            const query = searchElement.value.trim().toLowerCase();
+            const names = Object.keys(items).filter(name => name.toLowerCase().includes(query)).sort((a, b) => a.localeCompare(b));
+            listElement.replaceChildren();
+            if (!names.length) {
+                listElement.innerHTML = '<div class="empty">ما فيه شخصيات تطابق البحث.</div>';
+                return;
+            }
+            for (const name of names) {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = `item-button${selectedName === name ? " selected" : ""}`;
+                button.textContent = name;
+                button.addEventListener("click", () => {
+                    selectedName = name;
+                    renderList();
+                    renderEditor();
+                });
+                listElement.append(button);
+            }
+        }
+
+        function renderEditor() {
+            const item = items[selectedName];
+            if (!item) {
+                editorElement.innerHTML = '<div class="empty">اختر شخصية من القائمة لعرض أسعارها.</div>';
+                return;
+            }
+
+            editorElement.replaceChildren();
+            const title = document.createElement("h2");
+            title.textContent = selectedName;
+            editorElement.append(title);
+
+            const form = document.createElement("form");
+            form.id = "price-form";
+            const baseField = createPriceField("السعر الأساسي", "base-price", item.basePrice);
+            form.append(baseField);
+
+            const combos = item.combosData && typeof item.combosData === "object" ? item.combosData : {};
+            const keys = Object.keys(combos).sort((a, b) => {
+                if (a === "none_none") return -1;
+                if (b === "none_none") return 1;
+                return a.localeCompare(b);
+            });
+            const section = document.createElement("h3");
+            section.className = "section-title";
+            section.textContent = `أسعار الطفرات (${keys.length})`;
+            form.append(section);
+            const comboHint = document.createElement("p");
+            comboHint.className = "hint";
+            comboHint.textContent = "التوليفة التي يظهر سعرها كنص (مثل «لا توجد له قيمة») تبقى كما هي إذا تركت خانتها فارغة.";
+            form.append(comboHint);
+
+            if (!keys.length) {
+                const empty = document.createElement("p");
+                empty.className = "hint";
+                empty.textContent = "لا توجد أسعار طفرات مسجلة لهذه الشخصية.";
+                form.append(empty);
+            }
+            for (const key of keys) {
+                const comboField = createPriceField(displayName(key), `combo-${key}`, combos[key] && combos[key].basePrice, false);
+                form.append(comboField);
+            }
+
+            const actions = document.createElement("div");
+            actions.className = "actions";
+            const saveButton = document.createElement("button");
+            saveButton.type = "submit";
+            saveButton.className = "primary";
+            saveButton.textContent = "حفظ الأسعار";
+            actions.append(saveButton);
+
+            const status = document.createElement("div");
+            status.id = "status";
+            status.setAttribute("role", "status");
+            status.setAttribute("aria-live", "polite");
+            actions.append(status);
+            form.append(actions);
+            form.addEventListener("submit", savePrices);
+            editorElement.append(form);
+        }
+
+        function createPriceField(labelText, id, value, required = true) {
+            const field = document.createElement("div");
+            field.className = "field";
+            const label = document.createElement("label");
+            label.htmlFor = id;
+            label.textContent = labelText;
+            const input = document.createElement("input");
+            input.id = id;
+            input.type = "number";
+            input.min = "0";
+            input.step = "any";
+            input.required = required;
+            if (value !== undefined && value !== null && Number.isFinite(Number(value))) {
+                input.value = String(value);
+            } else if (value !== undefined && value !== null) {
+                input.placeholder = String(value);
+            }
+            field.append(label, input);
+            return field;
+        }
+
+        async function savePrices(event) {
+            event.preventDefault();
+            const form = event.currentTarget;
+            const button = form.querySelector("button[type=submit]");
+            const status = document.getElementById("status");
+            const comboPrices = {};
+            const combos = items[selectedName].combosData || {};
+
+            for (const key of Object.keys(combos)) {
+                const input = document.getElementById(`combo-${key}`);
+                if (input.value.trim() !== "") comboPrices[key] = input.valueAsNumber;
+            }
+
+            button.disabled = true;
+            status.textContent = "جارٍ الحفظ...";
+            status.className = "";
+            try {
+                const response = await fetch("/api/prices", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Dashboard-Token": dashboardToken
+                    },
+                    body: JSON.stringify({
+                        name: selectedName,
+                        basePrice: document.getElementById("base-price").valueAsNumber,
+                        comboPrices
+                    })
+                });
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.error || "تعذر حفظ الأسعار.");
+
+                items[selectedName].basePrice = document.getElementById("base-price").valueAsNumber;
+                for (const [key, price] of Object.entries(comboPrices)) {
+                    items[selectedName].combosData[key].basePrice = price;
+                }
+                status.textContent = "تم حفظ الأسعار بنجاح.";
+                status.className = "success";
+            } catch (error) {
+                status.textContent = error.message;
+                status.className = "error";
+            } finally {
+                button.disabled = false;
+            }
+        }
+
+        searchElement.addEventListener("input", renderList);
+        document.getElementById("logout").addEventListener("click", async () => {
+            const response = await fetch("/api/logout", {
+                method: "POST",
+                headers: { "X-Dashboard-Token": dashboardToken }
+            });
+            if (response.ok) location.reload();
+        });
+        fetch("/api/items")
+            .then(async response => {
+                const result = await response.json();
+                if (!response.ok) throw new Error(result.error || "تعذر تحميل الشخصيات.");
+                items = result.items;
+                renderList();
+                if (Object.keys(items).length) {
+                    selectedName = Object.keys(items).sort((a, b) => a.localeCompare(b))[0];
+                    renderList();
+                    renderEditor();
+                } else {
+                    listElement.innerHTML = '<div class="empty">قاعدة البيانات لا تحتوي على شخصيات.</div>';
+                }
+            })
+            .catch(error => {
+                listElement.textContent = error.message;
+            });
+    </script>
+</body>
+</html>
